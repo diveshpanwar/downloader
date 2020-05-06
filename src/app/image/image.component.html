@@ -1,0 +1,18 @@
+<div class="contaier-fluid">
+    <div class="col-10 ml-auto mr-auto">
+        <form [formGroup]="imageForm" (ngSubmit)="startExtraction()">
+            <div class="form-group mt-3">
+                <input type="text" formControlName="link" class="form-control" placeholder="PASTE THE IMAGE LINK">
+            </div>
+            <div class="form-group text-center">
+                <input type="submit" value="EXTRACT IMAGE" class="btn btn-outline-success" [disabled]="!imageForm.valid">
+            </div>
+        </form>
+    </div>
+    <div class="col-10 ml-auto mr-auto" *ngIf="imageLink">
+        <img [src]="imageLink" alt="" class="img-fluid">
+    </div>
+    <div class="col-10 ml-auto mr-auto text-center mt-3" *ngIf="imageLink">
+        <button class="btn btn-outline-primary" style="text-decoration: inherit;" (click)="downloadImage()">DOWNLOAD IMAGE</button>
+    </div>
+</div>

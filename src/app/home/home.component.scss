@@ -1,0 +1,20 @@
+$font-title:'righteous';
+
+.heading {
+    font-family: $font-title;
+    font-size: 3rem;
+    color: #5a5b5e;
+}
+
+@media (max-width: 545px) {
+    .heading {
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 370px) {
+    .heading {
+        font-size: 1.2rem;
+    }
+}

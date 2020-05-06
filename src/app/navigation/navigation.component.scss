@@ -1,0 +1,35 @@
+$font-title:'righteous';
+
+
+.fill-remaining-space {
+  /*This fills the remaining space, by using flexbox.
+   Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
+
+
+.nav-font {
+  font-family: $font-title;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+
+@media (max-width: 570px) {
+    .title {
+        font-size: 1.2rem;
+    }
+    .nav-font {
+        font-size: 1.2rem;
+    }
+
+    .menu-font {
+        font-size: 0.8rem;
+    }
+
+    .v-align-bottom {
+        vertical-align: bottom!important;
+    }
+}

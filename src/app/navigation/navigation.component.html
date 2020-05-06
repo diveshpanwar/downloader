@@ -1,0 +1,12 @@
+<div class="row">
+    <mat-toolbar color="primary" [class.mat-elevation-z8]="true">
+        <button mat-flat-button color="primary" class="title nav-font" (click)="visitLink('')">DOWNLOADER</button>
+        <span class="fill-remaining-space"></span>
+        <button mat-flat-button color="primary" (click)="visitLink('img')" class="nav-font menu-font" style="font-weight: 400;">
+            <mat-icon class="menu-font v-align-bottom" style="font-size: 20px;">perm_media</mat-icon> IMAGE
+        </button>
+        <button mat-flat-button color="primary" (click)="visitLink('video')" class="nav-font menu-font" style="font-weight: 400;">
+            <mat-icon class="menu-font v-align-bottom" style="font-size: 20px;">camera_alt</mat-icon> VIDEO
+        </button>
+    </mat-toolbar>
+</div>

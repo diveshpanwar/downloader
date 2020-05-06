@@ -1,0 +1,13 @@
+<div class="row keep-center">
+    <div class="col-10 ml-auto mr-auto mt-3 text-center" style="margin-top: 30vh;">
+        <img src="./assets/images/homepage.png" alt="" class="img-fluid mt-3">
+    </div>
+    <div class="col-12">
+        <h4 class="text-center heading">
+            {{headingText | slice : 0: 18}}
+            <span [style.color]="'#4385f7'">
+                {{headingText | slice : 18}}
+            </span>
+        </h4>
+    </div>
+</div>
